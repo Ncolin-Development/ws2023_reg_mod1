@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: table-question
+      author: ncolin
+      changes:
+        - createTable:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  type: ${id}
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: title
+                  type: varchar(120)
+              - column:
+                  name: active
+                  type: bool
+              - column:
+                  name: author
+                  type: varchar(64)
+              - column:
+                  name: grade
+                  type: varchar(32)
+              - column:
+                  name: subject
+                  type: varchar(32)
