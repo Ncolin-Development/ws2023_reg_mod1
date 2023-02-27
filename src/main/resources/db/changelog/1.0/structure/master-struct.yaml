@@ -1,10 +1,7 @@
 databaseChangeLog:
   - include:
-      file: 00.reference_data.yaml
+      file: 00.question.yaml
       relativeToChangeLogFile: true
   - include:
-      file: 01.question.yaml
-      relativeToChangeLogFile: true
-  - include:
-      file: 02.response.yaml
+      file: 01.response.yaml
       relativeToChangeLogFile: true
