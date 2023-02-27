@@ -24,15 +24,7 @@ databaseChangeLog:
                   type: varchar(64)
               - column:
                   name: grade
-                  type: ${id}
-                  constraints:
-                    foreignKeyName: question_grade_fk
-                    referencedTableName: grade
-                    referencedColumnNames: id
+                  type: varchar(32)
               - column:
                   name: subject
-                  type: ${id}
-                  constraints:
-                    foreignKeyName: question_subject_fk
-                    referencedTableName: subject
-                    referencedColumnNames: id
+                  type: varchar(32)
