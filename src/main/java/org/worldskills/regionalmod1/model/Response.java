@@ -23,6 +23,6 @@ public class Response {
     private Integer number;
 
     @ManyToOne(fetch = FetchType.LAZY, targetEntity = Question.class)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "question", referencedColumnName = "id")
     private Question question;
 }
