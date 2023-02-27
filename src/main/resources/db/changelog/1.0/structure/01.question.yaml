@@ -1,0 +1,38 @@
+databaseChangeLog:
+  - changeSet:
+      id: table-question
+      author: ncolin
+      changes:
+        - createTable:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  type: ${id}
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: title
+                  type: varchar(120)
+              - column:
+                  name: active
+                  type: bool
+              - column:
+                  name: author
+                  type: varchar(64)
+              - column:
+                  name: grade
+                  type: ${id}
+                  constraints:
+                    foreignKeyName: question_grade_fk
+                    referencedTableName: grade
+                    referencedColumnNames: id
+              - column:
+                  name: subject
+                  type: ${id}
+                  constraints:
+                    foreignKeyName: question_subject_fk
+                    referencedTableName: subject
+                    referencedColumnNames: id
