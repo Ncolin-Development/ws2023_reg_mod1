@@ -8,7 +8,7 @@ public class Response {
 
     @Id
     @GeneratedValue
-    private Long id;
+    private long id;
 
     @Column(name = "summary", length = 100)
     private String summary;
