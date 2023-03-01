@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: structure/master-struct.yaml
+      relativeToChangeLogFile: true
+  - include:
+      file: data/master-data.yaml
+      relativeToChangeLogFile: true

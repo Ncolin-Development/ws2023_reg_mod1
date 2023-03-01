@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:ws2023reg69mod1
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+server:
+  servlet:
+    context-path: /ws2023regionalmod1
