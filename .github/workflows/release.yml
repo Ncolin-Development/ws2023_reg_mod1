@@ -1,6 +1,8 @@
-name: Build
+name: Upload release jar
 on:
-  release:
+  push:
+    tags:
+      - 'v*'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,10 +24,9 @@ jobs:
         run: mvn versions:set -DremoveSnapshot
       - name: Build with Maven
         run: mvn clean package -DskipTests
-      - name: Set version to next minor
-        run: mvn validate -DbumpPatch
-      - name: Upload jar
-        uses: actions/upload-artifact@v3
+      - name: Release with Notes
+        uses: softprops/action-gh-release@v1
         with:
-          name: ws2023regionalmod1.jar
-          path: target/ws2023regionalmod1.jar
+          files: target/ws2023regionalmod1.jar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
