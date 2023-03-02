@@ -1,0 +1,311 @@
+databaseChangeLog:
+  - changeSet:
+      id: table-question
+      author: ncolin
+      changes:
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 13
+              - column:
+                  name: title
+                  value: Qui est à l'origine du tableau périodique des éléments ?
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: K. PLAT
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: CHIMIE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: "Mendeleëiv"
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 13
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: "Tchaikovsky "
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est Mendeleëiv
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 13
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 14
+              - column:
+                  name: title
+                  value: Comment s'appelle le passage de l'état liquide à l'état gazeux ?
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: K. PLAT
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: CHIMIE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: La vaporisation
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est la sublimation
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 14
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: La fusion
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est la sublimation
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 14
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: La condensation
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est la sublimation
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 14
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: La sublimation
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 14
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 15
+              - column:
+                  name: title
+                  value: Quel est le numéro atomique de l'étain ?
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: K. PLAT
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: CHIMIE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: "50"
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 15
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: "49"
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 50
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 15
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: "48"
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 50
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 15
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 16
+              - column:
+                  name: title
+                  value: Les réactions de combustion des métaux sont des ... vives
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: K. PLAT
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: CHIMIE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: transformations
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est réactions chimiques
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 16
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: réactions chimiques
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 16
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: équations
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est réactions chimiques
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 16

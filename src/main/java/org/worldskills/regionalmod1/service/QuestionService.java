@@ -18,6 +18,7 @@ import org.worldskills.regionalmod1.repository.QuestionRepository;
 public class QuestionService {
 
     private final QuestionRepository questionRepository;
+    private final ResponseService responseService;
 
     /**
      * Get all questions
@@ -72,7 +73,8 @@ public class QuestionService {
      * @param id id of question
      */
     public void deleteQuestion(Long id) {
-        Question question = this.questionRepository.findById(id).orElseThrow(() -> new NotFoundException("Question not found"));
+        this.questionRepository.findById(id).orElseThrow(() -> new NotFoundException("Question not found"));
+        this.responseService.deleteByQuestionId(id);
         this.questionRepository.deleteById(id);
     }
 

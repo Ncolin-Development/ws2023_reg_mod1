@@ -1,4 +1,22 @@
 databaseChangeLog:
   - include:
-      file: 00.questions.yaml
+      file: 00.questions_c_math.yaml
+      relativeToChangeLogFile: true
+  - include:
+      file: 01.questions_c_francais.yaml
+      relativeToChangeLogFile: true
+  - include:
+      file: 02.questions_c_geo.yaml
+      relativeToChangeLogFile: true
+  - include:
+      file: 03.questions_c_chimie.yaml
+      relativeToChangeLogFile: true
+  - include:
+      file: 04.questions_c_anglais.yaml
+      relativeToChangeLogFile: true
+  - include:
+      file: 05.questions_c_histoire.yaml
+      relativeToChangeLogFile: true
+  - include:
+      file: 06.questions_c_physique.yaml
       relativeToChangeLogFile: true

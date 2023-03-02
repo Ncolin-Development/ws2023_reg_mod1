@@ -1,0 +1,293 @@
+databaseChangeLog:
+  - changeSet:
+      id: table-question
+      author: ncolin
+      changes:
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 21
+              - column:
+                  name: title
+                  value: A quelle période sont apparus nos ancêtres ?
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: L. DEUTSCH
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: HISTOIRE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: 1 ou 2 millions de notre ère
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 3 ou 4 millions avant notre ère
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 21
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: 3 ou 4 millions avant notre ère
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 21
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 22
+              - column:
+                  name: title
+                  value: Comment est le royaume de France au XVIème siècle?
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: L. DEUTSCH
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: HISTOIRE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: pauvre et dévasté
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est riche et prospère
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 22
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: riche et prospère
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 22
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: sans problème
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est riche et prospère
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 22
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: en guerre
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est riche et prospère
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 22
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 23
+              - column:
+                  name: title
+                  value: Est ce que la IIIème république se fonde sur une défaite ?
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: L. DEUTSCH
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: HISTOIRE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Oui
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 23
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Non
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est oui
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 23
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 24
+              - column:
+                  name: title
+                  value: Qui succédera à De Gaulle
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: L. DEUTSCH
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: HISTOIRE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Jacques Chirac
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est Georges Pompidou
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 24
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Georges Pompidou
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 24
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: François Mitterand
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est Georges Pompidou
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 24

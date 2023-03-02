@@ -1,0 +1,275 @@
+databaseChangeLog:
+  - changeSet:
+      id: table-question
+      author: ncolin
+      changes:
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 1
+              - column:
+                  name: title
+                  value: Quelle est la formule qui énonce le théorème de Pythagore ?
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: S. DUMONT
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: MATHEMATIQUES
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: E = mc²
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: E = mc² est la formule d'équivalence entre la masse et l'energie.
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 1
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: A² = B² + C²
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: Dans le cadre d'un triangle droit, le théorème de Pythagore nous permet de calculer les dimensions des 3 côtés.
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 1
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: A² = B² - C²
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: Le signe de l'équation est faux.
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 1
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 2
+              - column:
+                  name: title
+                  value: "Quelle est la valeur de x dans l'équation suivante: x² + 4a + 2 = 14"
+              - column:
+                  name: active
+                  valueBoolean: false
+              - column:
+                  name: author
+                  value: S. DUMONT
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: MATHEMATIQUES
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: "2"
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 2
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: "3"
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 2
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 2
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: "4"
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 2
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 2
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 3
+              - column:
+                  name: title
+                  value: Combien de côtés a un octogone ?
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: S. DUMONT
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: MATHEMATIQUES
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: "6"
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 8
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 3
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: "8"
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 3
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 4
+              - column:
+                  name: title
+                  value: Si a et b sont deux entiers naturels et qu'on divise a par b alors on obtient deux entiers natures q (quotient) et r (reste).
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: S. DUMONT
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: MATHEMATIQUES
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: VRAI
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 4
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: FAUX
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est VRAI
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 4

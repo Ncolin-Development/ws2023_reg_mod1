@@ -1,0 +1,365 @@
+databaseChangeLog:
+  - changeSet:
+      id: table-question
+      author: ncolin
+      changes:
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 17
+              - column:
+                  name: title
+                  value: They... having a bath
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: J. SMITH
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: ANGLAIS
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: is
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est is
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 17
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: are
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 17
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: am
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est is
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 17
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 18
+              - column:
+                  name: title
+                  value: New York is ...
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: J. SMITH
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: ANGLAIS
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: a city
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est both
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 18
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: a state
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est both
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 18
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: neither
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est both
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 18
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: both
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 18
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 19
+              - column:
+                  name: title
+                  value: I was made ...... our secret.
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: J. SMITH
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: ANGLAIS
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: betraying
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est to betray
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 19
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: betrayed
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est to betray
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 19
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: to betray
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 19
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: betray
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est to betray
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 19
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 20
+              - column:
+                  name: title
+                  value: ... go to the theater tonight
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: J. SMITH
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: ANGLAIS
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Would we
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est Shall we
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 20
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Are we to
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est Shall we
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 20
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Shall we
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 20
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Do we
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est Shall we
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 20
