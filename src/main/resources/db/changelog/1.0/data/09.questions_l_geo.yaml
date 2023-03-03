@@ -1,0 +1,347 @@
+databaseChangeLog:
+  - changeSet:
+      id: table-question
+      author: ncolin
+      changes:
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 37
+              - column:
+                  name: title
+                  value: Quelle est la densité moyenne de la France ?
+              - column:
+                  name: active
+                  valueBoolean: false
+              - column:
+                  name: author
+                  value: A. DUVAL
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: GEOGRAPHIE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: 106 habitants par km²
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: Atlantique, Pacifique, Indien, Arctique et Austral
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 37
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: 60 habitants par km²
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 106 habitants par km²
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 37
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: 180 habitants par km²
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 106 habitants par km²
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 37
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: 240 habitants par km²
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 106 habitants par km²
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 37
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 38
+              - column:
+                  name: title
+                  value: A quelle situation démographique renvoie une pyramide des âges dont le sommet s’élargit ?
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: A. DUVAL
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: GEOGRAPHIE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: la natalité diminue
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est la tranche d’âge des personnes âgées augmente
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 38
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: l’espérance de vie augmente
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est la tranche d’âge des personnes âgées augmente
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 38
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: la part des jeunes dans la population diminue
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est la tranche d’âge des personnes âgées augmente
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 38
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: la tranche d’âge des personnes âgées augmente
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 38
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 39
+              - column:
+                  name: title
+                  value: La population des Etats-Unis est de l’ordre de…
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: A. DUVAL
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: GEOGRAPHIE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: 270 millions d’habitants
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 39
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: 170 millions d’habitants
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 270 millions d’habitants
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 39
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 40
+              - column:
+                  name: title
+                  value: "Identifiez la proposition fausse au sein de ces affirmations sur les villes des Etats-Unis :"
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: A. DUVAL
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: GEOGRAPHIE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Les villes des Etats-Unis regroupent trois quarts de la population
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est Les villes des Etats-Unis abritent en leurs centres les classes moyennes
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 40
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Les villes des Etats-Unis sont bâties sur des plans comparables
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est Les villes des Etats-Unis abritent en leurs centres les classes moyennes
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 40
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Les villes des Etats-Unis abritent en leurs centres les classes moyennes
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 40
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Les villes des Etats-Unis sont entourées de banlieues
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est Les villes des Etats-Unis abritent en leurs centres les classes moyennes
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 40

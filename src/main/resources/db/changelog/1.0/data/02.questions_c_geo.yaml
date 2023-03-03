@@ -1,0 +1,347 @@
+databaseChangeLog:
+  - changeSet:
+      id: table-question
+      author: ncolin
+      changes:
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 9
+              - column:
+                  name: title
+                  value: Combien y a t'il d'océans ?
+              - column:
+                  name: active
+                  valueBoolean: false
+              - column:
+                  name: author
+                  value: A. DUVAL
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: GEOGRAPHIE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: "5"
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: Atlantique, Pacifique, Indien, Arctique et Austral
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 9
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: "4"
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 5
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 9
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: "3"
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 5
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 9
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: "2"
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 5
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 9
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 10
+              - column:
+                  name: title
+                  value: Comment se nomme le fleuve traversant 10 pays européens ?
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: A. DUVAL
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: GEOGRAPHIE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Le rhône
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est le Danube
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 10
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Le Rhin
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est le Danube
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 10
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: La Seine
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est le Danube
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 10
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Le Danube
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 10
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 11
+              - column:
+                  name: title
+                  value: Quelle est la 2ème plus haute montagne d'Europe ?
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: A. DUVAL
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: GEOGRAPHIE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Dykh-Tau
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 11
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Elbrouz
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est le Dykh-Tau
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 11
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 12
+              - column:
+                  name: title
+                  value: Combien d'états possèdent les Etats-Unis ?
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: A. DUVAL
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: GEOGRAPHIE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: "40"
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 50
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 12
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: "45"
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 50
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 12
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: "50"
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 12
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: "55"
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 50
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 12

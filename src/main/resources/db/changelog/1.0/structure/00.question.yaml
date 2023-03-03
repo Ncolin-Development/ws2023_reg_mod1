@@ -15,7 +15,7 @@ databaseChangeLog:
                     nullable: false
               - column:
                   name: title
-                  type: varchar(120)
+                  type: varchar(200)
               - column:
                   name: active
                   type: bool
