@@ -1,0 +1,365 @@
+databaseChangeLog:
+  - changeSet:
+      id: table-question
+      author: ncolin
+      changes:
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 45
+              - column:
+                  name: title
+                  value: not ... trafic ; not ... Cars
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: J. SMITH
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: ANGLAIS
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: many / many
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est much / many
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 45
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: much / many
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 45
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: much / much
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est much / many
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 45
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 46
+              - column:
+                  name: title
+                  value: Une seule des formes suivantes existe
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: J. SMITH
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: ANGLAIS
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: great many the people
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est a great many people
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 46
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: great the many people
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est a great many people
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 46
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: a many great people
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est a great many people
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 46
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: a great many people
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 46
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 47
+              - column:
+                  name: title
+                  value: Traduire «quelle est la longueur du tunnel ?»
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: J. SMITH
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: ANGLAIS
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: how length is the tunnel ?
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est how long is the tunnel ?
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 47
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: what longuess is the tunnel ?
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est how long is the tunnel ?
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 47
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: how long is the tunnel ?
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 47
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: what long is the tunnel ?
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est how long is the tunnel ?
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 47
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 48
+              - column:
+                  name: title
+                  value: There ... ... people, they were making ... noise.
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: J. SMITH
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: ANGLAIS
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: was / a lot of / a lot of
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est were / a lot of / a lot of
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 48
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: were / lots of / lots of
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est were / a lot of / a lot of
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 48
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: were / a lot of / a lot of
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 48
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: was / lots of / lots of
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est were / a lot of / a lot of
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 48

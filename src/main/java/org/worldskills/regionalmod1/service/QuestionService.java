@@ -21,12 +21,26 @@ public class QuestionService {
     private final ResponseService responseService;
 
     /**
-     * Get all questions
+     * Search for questions
      *
+     * @param subject subject
+     * @param grade grade
      * @return {@link Question}
      */
-    public Iterable<Question> getAllQuestions() {
-        return this.questionRepository.findAll();
+    public Iterable<Question> searchQuestions(String subject, String grade) {
+        this.checkGrade(grade);
+        this.checkSubject(subject);
+
+        if (StringUtils.isBlank(subject) && StringUtils.isNotBlank(grade)) {
+            return this.questionRepository.searchQuestionByGrade(EnumUtils.getEnum(Grade.class, grade));
+        } else if (StringUtils.isBlank(grade) && StringUtils.isNotBlank(subject)) {
+            return this.questionRepository.searchQuestionBySubject(EnumUtils.getEnum(Subject.class, subject));
+        } else if (StringUtils.isNoneBlank(grade, subject)) {
+            return this.questionRepository.searchQuestionByGradeAndSubject(EnumUtils.getEnum(Grade.class, grade), EnumUtils.getEnum(Subject.class, subject));
+        } else {
+            throw new BadRequestException("At least one of subject or grade must be filled");
+        }
+
     }
 
     /**
@@ -36,12 +50,8 @@ public class QuestionService {
      * @return new question's id
      */
     public Long createQuestion(CreateQuestionRequest newQuestion) {
-        if (null != newQuestion.getGrade() && !EnumUtils.isValidEnum(Grade.class, newQuestion.getGrade())) {
-            throw new BadRequestException("Grade is not within bounds of the enum");
-        }
-        if (null != newQuestion.getSubject() && !EnumUtils.isValidEnum(Subject.class, newQuestion.getSubject())) {
-            throw new BadRequestException("Subject is not within bounds of the enum");
-        }
+        this.checkGrade(newQuestion.getGrade());
+        this.checkSubject(newQuestion.getSubject());
         if (StringUtils.isBlank(newQuestion.getTitle())) {
             throw new BadRequestException("Title must not be null");
         }
@@ -49,6 +59,18 @@ public class QuestionService {
             throw new BadRequestException("Active must be filled");
         }
         return this.questionRepository.save(this.mapQuestionFromRequest(newQuestion)).getId();
+    }
+
+    private void checkSubject(String subject) {
+        if (null != subject && !EnumUtils.isValidEnum(Subject.class, subject)) {
+            throw new BadRequestException("Subject is not within bounds of the enum");
+        }
+    }
+
+    private void checkGrade(String grade) {
+        if (null != grade && !EnumUtils.isValidEnum(Grade.class, grade)) {
+            throw new BadRequestException("Grade is not within bounds of the enum");
+        }
     }
 
     /**

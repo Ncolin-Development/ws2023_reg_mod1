@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.worldskills.regionalmod1.model.CreateQuestionRequest;
 import org.worldskills.regionalmod1.model.Question;
@@ -25,8 +26,8 @@ public class QuestionController {
     private final QuestionService questionService;
 
     @GetMapping
-    public ResponseEntity<Iterable<Question>> getAllQuestions() {
-        return ok().body(this.questionService.getAllQuestions());
+    public ResponseEntity<Iterable<Question>> searchQuestions(@RequestParam(value = "grade", required = false) String grade, @RequestParam(value = "subject", required = false) String subject) {
+        return ok().body(this.questionService.searchQuestions(subject, grade));
     }
 
     @PostMapping
