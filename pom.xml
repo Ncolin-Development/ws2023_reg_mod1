@@ -68,7 +68,7 @@
     </dependencies>
 
     <build>
-        <finalName>ws2023regionalmod1</finalName>
+        <finalName>ws2023regionalmod2</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
