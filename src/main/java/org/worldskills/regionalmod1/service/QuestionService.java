@@ -28,9 +28,6 @@ public class QuestionService {
      * @return {@link Question}
      */
     public Iterable<Question> searchQuestions(String subject, String grade) {
-        this.checkGrade(grade);
-        this.checkSubject(subject);
-
         if (StringUtils.isBlank(subject) && StringUtils.isNotBlank(grade)) {
             return this.questionRepository.searchQuestionByGrade(EnumUtils.getEnum(Grade.class, grade));
         } else if (StringUtils.isBlank(grade) && StringUtils.isNotBlank(subject)) {
@@ -38,7 +35,7 @@ public class QuestionService {
         } else if (StringUtils.isNoneBlank(grade, subject)) {
             return this.questionRepository.searchQuestionByGradeAndSubject(EnumUtils.getEnum(Grade.class, grade), EnumUtils.getEnum(Subject.class, subject));
         } else {
-            throw new BadRequestException("At least one of subject or grade must be filled");
+            return this.questionRepository.findAll();
         }
 
     }
