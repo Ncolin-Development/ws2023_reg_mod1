@@ -1,0 +1,293 @@
+databaseChangeLog:
+  - changeSet:
+      id: table-question
+      author: ncolin
+      changes:
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 49
+              - column:
+                  name: title
+                  value: L’Assemblée Nationale…
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: L. DEUTSCH
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: HISTOIRE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: est élue pour quatre ans
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est peut voter une motion de censure pour renverser le gouvernement
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 49
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: peut voter une motion de censure pour renverser le gouvernement
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 49
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 50
+              - column:
+                  name: title
+                  value: Georges Pompidou a été élu au suffrage universel
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: L. DEUTSCH
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: HISTOIRE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: faux
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est vrai
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 50
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: vrai
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 50
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 51
+              - column:
+                  name: title
+                  value: Les Accords de Grenelle…
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: L. DEUTSCH
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: HISTOIRE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: satisfont la CGT
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 51
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: satisfont la CFDT
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est satisfont la CGT
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 51
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 52
+              - column:
+                  name: title
+                  value: Identifiez la proposition fausse au sein de ces affirmations sur Jacques Chirac
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: L. DEUTSCH
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: HISTOIRE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: J. Chirac devient maire de Paris en 1977
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est J. Chirac a été Premier Ministre sous la présidence de Pompidou
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 52
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: J. Chirac a été Premier Ministre sous la présidence de Pompidou
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 52
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: J. Chirac devient président du RPR en 1976
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est J. Chirac a été Premier Ministre sous la présidence de Pompidou
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 52
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: J. Chirac a été Premier Ministre sous la présidence de VGE
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est J. Chirac a été Premier Ministre sous la présidence de Pompidou
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 52
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: J. Chirac a été Premier Ministre sous la présidence de F. Mitterrand
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est J. Chirac a été Premier Ministre sous la présidence de Pompidou
+              - column:
+                  name: number
+                  valueNumeric: 5
+              - column:
+                  name: question
+                  valueNumeric: 52

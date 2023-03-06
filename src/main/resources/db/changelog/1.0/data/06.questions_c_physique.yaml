@@ -1,0 +1,329 @@
+databaseChangeLog:
+  - changeSet:
+      id: table-question
+      author: ncolin
+      changes:
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 25
+              - column:
+                  name: title
+                  value: Dans un circuit en série, où L(1) et L(2) sont branchées avec le générateur, si l'on cours-circuite L(1), que se passe-t-il pour le générateur ?
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: N. TESLA
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: PHYSIQUE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: le générateur est cours-circuité
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est les deux lampes s'éteignent
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 25
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: le générateur et les lampes s'éteignent
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est les deux lampes s'éteignent
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 25
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: les deux lampes s'éteignent
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 25
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: les deux lampes clignotent
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est les deux lampes s'éteignent
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 25
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 26
+              - column:
+                  name: title
+                  value: La distance Soleil-Terre vaut environ
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: N. TESLA
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: PHYSIQUE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: 3.10^(5) km
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 26
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: 1,5.10^(5) km
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 3.10^(5) km
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 26
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: 1,5.10^(8)
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 3.10^(5) km
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 26
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: 3.10^(8) km
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 3.10^(5) km
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 26
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 27
+              - column:
+                  name: title
+                  value: La loi d'Ohm se traduit par
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: N. TESLA
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: PHYSIQUE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: U = RI
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 27
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: U = R/I
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est U = RI
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 27
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 28
+              - column:
+                  name: title
+                  value: Indiquer le sens de déplacement des électrons dans un métal
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: N. TESLA
+              - column:
+                  name: grade
+                  value: COLLEGE
+              - column:
+                  name: subject
+                  value: PHYSIQUE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: de la borne + vers la borne -
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est de la borne - vers la borne +
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 28
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: de la borne - vers la borne +
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 28
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: de façon désordonné
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est de la borne - vers la borne +
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 28

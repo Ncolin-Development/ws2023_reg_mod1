@@ -1,0 +1,311 @@
+databaseChangeLog:
+  - changeSet:
+      id: table-question
+      author: ncolin
+      changes:
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 41
+              - column:
+                  name: title
+                  value: Les molécules ayant même constitution, qui ne diffèrent que par la disposition des atomes dans l’espace sont appelées….
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: K. PLAT
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: CHIMIE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: stéréoisomères
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 41
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: diastéréoisomères
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est stéréoisomères
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 41
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 42
+              - column:
+                  name: title
+                  value: Un couple d’isomères de configuration dont les molécules ne sont pas images l’une de l’autre dans un miroir est appelé….
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: K. PLAT
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: CHIMIE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: isomères de constitution
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est diastéréoisomères
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 42
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: énantiomères
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est diastéréoisomères
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 42
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: stéréoisomères de conformation
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est diastéréoisomères
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 42
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: diastéréoisomères
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 42
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 43
+              - column:
+                  name: title
+                  value: Un couple d’isomères de configuration, non superposables, images l’un de l’autre dans un miroir sont appelés….
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: K. PLAT
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: CHIMIE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: énantiomères
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 43
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: stéréoisomères de conformation
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est énantiomères
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 43
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: isomères de constitution
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est énantiomères
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 43
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 44
+              - column:
+                  name: title
+                  value: Deux isomères de même constitution et de même configuration, qui ne diffèrent donc que par leur conformation, sont appelés….
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: K. PLAT
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: CHIMIE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: énantiomères de conformation
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est isomères de conformation
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 44
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: isomères de conformation
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 44
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: stéréoisomères
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est isomères de conformation
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 44

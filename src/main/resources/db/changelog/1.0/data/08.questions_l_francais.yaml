@@ -1,0 +1,329 @@
+databaseChangeLog:
+  - changeSet:
+      id: table-question
+      author: ncolin
+      changes:
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 33
+              - column:
+                  name: title
+                  value: En quelle année Saint-Exupéry écrit-il le Petit Prince ?
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: J. COLIN
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: FRANCAIS
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: 1955
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 1943
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 33
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: 1918
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 1943
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 33
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: 1927
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 1943
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 33
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: 1943
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 33
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 34
+              - column:
+                  name: title
+                  value: Qui est l'auteur de "l'art est un anti-destin" ?
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: J. COLIN
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: FRANCAIS
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Malraux
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 34
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Camus
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est Malraux
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 34
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Duras Ionesco
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est Malraux
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 34
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 35
+              - column:
+                  name: title
+                  value: Quelle oeuvre n'a pas été écrite par André Gide ?
+              - column:
+                  name: active
+                  valueBoolean: false
+              - column:
+                  name: author
+                  value: J. COLIN
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: FRANCAIS
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: La guerre de Troie n'aura pas lieu
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 35
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: L'immoraliste
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est La guerre de Troie n'aura pas lieu
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 35
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 36
+              - column:
+                  name: title
+                  value: "'Qui sont ces serpents qui sifflent?' est une :"
+              - column:
+                  name: active
+                  valueBoolean: false
+              - column:
+                  name: author
+                  value: J. COLIN
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: FRANCAIS
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: assonance
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est allitération
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 36
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: anaphore
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est allitération
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 36
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: allitération
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 36
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: métonymie
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est allitération
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 36

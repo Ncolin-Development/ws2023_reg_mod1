@@ -1,4 +1,43 @@
 databaseChangeLog:
   - include:
-      file: 00.questions.yaml
+      file: 00.questions_c_math.yaml
+      relativeToChangeLogFile: true
+  - include:
+      file: 01.questions_c_francais.yaml
+      relativeToChangeLogFile: true
+  - include:
+      file: 02.questions_c_geo.yaml
+      relativeToChangeLogFile: true
+  - include:
+      file: 03.questions_c_chimie.yaml
+      relativeToChangeLogFile: true
+  - include:
+      file: 04.questions_c_anglais.yaml
+      relativeToChangeLogFile: true
+  - include:
+      file: 05.questions_c_histoire.yaml
+      relativeToChangeLogFile: true
+  - include:
+      file: 06.questions_c_physique.yaml
+      relativeToChangeLogFile: true
+  - include:
+      file: 07.questions_l_math.yaml
+      relativeToChangeLogFile: true
+  - include:
+      file: 08.questions_l_francais.yaml
+      relativeToChangeLogFile: true
+  - include:
+      file: 09.questions_l_geo.yaml
+      relativeToChangeLogFile: true
+  - include:
+      file: 10.questions_l_chimie.yaml
+      relativeToChangeLogFile: true
+  - include:
+      file: 11.questions_l_anglais.yaml
+      relativeToChangeLogFile: true
+  - include:
+      file: 12.questions_l_histoire.yaml
+      relativeToChangeLogFile: true
+  - include:
+      file: 13.questions_l_physique.yaml
       relativeToChangeLogFile: true

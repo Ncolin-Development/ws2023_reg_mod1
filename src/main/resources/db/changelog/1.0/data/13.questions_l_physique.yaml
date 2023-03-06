@@ -1,0 +1,311 @@
+databaseChangeLog:
+  - changeSet:
+      id: table-question
+      author: ncolin
+      changes:
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 53
+              - column:
+                  name: title
+                  value: Les trains d’ondes qu’émet le laser sont de longueur beaucoup plus petite que celle des trains créés par des sources spectrales à vapeur.
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: N. TESLA
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: PHYSIQUE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Vrai
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est Faux
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 53
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: Faux
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 53
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 54
+              - column:
+                  name: title
+                  value: "L’effet laser a sa source au niveau atomique. Il fait intervenir trois phénomènes fondamentaux : l’absorption, l’émission spontanée et…"
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: N. TESLA
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: PHYSIQUE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: l’émission simulée
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 54
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: l’absorption stimulée
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est l’émission stimulée
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 54
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: l’absorption simulée
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est l’émission stimulée
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 54
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: 3.10^(8) km
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est l’émission stimulée
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 54
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 55
+              - column:
+                  name: title
+                  value: A la fin du processus de l’émission stimulée, on trouve…
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: N. TESLA
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: PHYSIQUE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: 2 photons
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 55
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: 1 photon
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est 2 photons
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 55
+
+
+        - insert:
+            tableName: question
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 56
+              - column:
+                  name: title
+                  value: Le laser se comporte comme un oscillateur entretenu. La résistance négative est fournie par…
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: author
+                  value: N. TESLA
+              - column:
+                  name: grade
+                  value: LYCEE
+              - column:
+                  name: subject
+                  value: PHYSIQUE
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: le phénomène de cavitation
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est le phénomène de pompage
+              - column:
+                  name: number
+                  valueNumeric: 1
+              - column:
+                  name: question
+                  valueNumeric: 56
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: le phénomène de pompage
+              - column:
+                  name: correct
+                  valueBoolean: true
+              - column:
+                  name: explaination
+                  value: C'est la bonne réponse
+              - column:
+                  name: number
+                  valueNumeric: 2
+              - column:
+                  name: question
+                  valueNumeric: 56
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: le phénomène de résonance
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est le phénomène de pompage
+              - column:
+                  name: number
+                  valueNumeric: 3
+              - column:
+                  name: question
+                  valueNumeric: 56
+        - insert:
+            tableName: response
+            columns:
+              - column:
+                  name: summary
+                  value: le phénomène d’amplification
+              - column:
+                  name: correct
+                  valueBoolean: false
+              - column:
+                  name: explaination
+                  value: La bonne réponse est le phénomène de pompage
+              - column:
+                  name: number
+                  valueNumeric: 4
+              - column:
+                  name: question
+                  valueNumeric: 56
